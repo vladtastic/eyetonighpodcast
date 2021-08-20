@@ -3,7 +3,7 @@ from model.feed import Feed
 
 
 app = Flask(__name__)
-rss_feed = Feed('')
+rss_feed = Feed('https://feeds.buzzsprout.com/1769761.rss')
 episodes = rss_feed.episodes
 
 
