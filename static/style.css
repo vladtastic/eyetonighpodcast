@@ -1,0 +1,93 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: wheat;
+    align-self: center;
+}
+
+li {
+    float: left;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: darkred;
+}
+
+img {
+    width: 87px;
+    height: 87px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: wheat;
+    color: saddlebrown;
+}
+
+div.episode-title {
+    border-style: dashed;
+    border-color: saddlebrown;
+    border-width: initial;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: "system-ui";
+    font-size: xx-large;
+    text-shadow: 2px 1px black;
+    text-align: center;
+    background-color: navajowhite;
+}
+
+div.episode-body {
+    border-style: dashed;
+    border-color: saddlebrown;
+    border-width: initial;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px;
+    background-color: navajowhite;
+}
+
+div.episode {
+    margin-bottom: 50px;
+}
+
+h1.episode-title {
+    text-align: center;
+}
+
+div.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.footer-social {
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: center;
+    align-content: center;
+}
+
+div.footer-social img {
+    width: 20px;
+    height: 20px;
+}

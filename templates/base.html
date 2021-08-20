@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eye To Nigh Podcast</title>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.google.apis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}">
+        </div>
+    <ul>
+        <li><a href="/">Episodes</a></li>
+                <li><a href="/">Merch</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/sponsorship">Sponsorship</a></li>
+    </ul>
+    </nav>
+<div class="episodes-container">
+    {% for episode in episodes %}
+    <div class="episode">
+        <div class="episode-title">
+            {{ episode.title }}
+        </div>
+        <div class="episode-body">
+            {{ episode.summary | safe }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer-social">
+            <img src="{{ url_for('static', filename='social.png') }}">
+            <img src="{{ url_for('static', filename='social.png') }}">
+            <img src="{{ url_for('static', filename='social.png') }}">
+            <img src="{{ url_for('static', filename='social.png') }}">
+            <img src="{{ url_for('static', filename='social.png') }}">
+        </div>
+    </div>
+</footer>
+</html>
