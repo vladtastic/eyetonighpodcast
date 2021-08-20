@@ -1,1 +1,1 @@
-web: gunicorn eyetonighpodcast.app
+web: gunicorn app
